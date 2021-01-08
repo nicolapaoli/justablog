@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This is a post</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="newpost-page">
+    <header>
+        <div class="profile-name">New Post</div>
+        <div class="subtext">Let's add a new post</div>
+    </header>
+    <div class="main">
+        <div class="main-container">
+            <div class="navigation">
+                <a href="index.html">Back</a>
+            </div>
+            <div class="post-container">
+                <form>
+                    <input id="new-post-title" type="text" name="post-title" placeholder="Post Title">
+                    <textarea id="new-post-content" name="post-content" placeholder="Post Content.."></textarea>
+                    <div>
+                        <label for="new-post-image">Choose Image</label>
+                        <input id="new-post-image" type="file" name="post-image" accept="image/*">
+                    </div>
+                    <button id="form-post-submit" type="button" onclick="submitNewPost()" class="btn">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>Made with love</p>
+    </footer>
+    <script src="js/newpost.js"></script>
+</body>
+
+</html>
