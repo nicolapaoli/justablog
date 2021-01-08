@@ -32,13 +32,15 @@ const buildPosts = (blogPosts) => {
 
 
 const buildPostHTML = (post) => {
-    const postDate = new Date(post.addedDate).toDateString()
-    return `<div id="${post.id}" class="post">
+    const postDate = new Date(parseInt(post.added_date)).toDateString()
+    return `<a href="/post.html?id=${post.id}" class="post-link">
+    <div id="${post.id}" class="post">
 <div class="post-image" style="background-image: url(${API_BASE_URL}${post.post_image})"></div>
 <div class="post-content">
     <div class="post-date">${postDate}</div>
     <div class="post-title"><h4>${post.title}</h4></div>
     <div class="post-text">${post.content}</div>
 </div>
-</div>`
+</div>
+</a>`
 }

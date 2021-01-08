@@ -3,10 +3,6 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.post-link {
-    text-decoration: none;
-}
-
 header {
     min-height: 350px;
     background-color: blue;
@@ -15,10 +11,13 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url('../assets/banner.jpeg');
     background-size: cover;
     background-position: center;
     position: relative;
+}
+
+.homepage header {
+    background-image: url('../assets/banner.jpeg');
 }
 
 header > * {
@@ -181,4 +180,7 @@ footer {
     line-height: 1.4;
     font-weight: 400;
     padding: 24px 16px;
+}
+a.post-link {
+    text-decoration: none;
 }
