@@ -6,7 +6,6 @@ window.onload = () => {
 }
 
 const getPosts = () => {
-    console.log('getting posts')
     fetch(API_URL, {
         method: 'GET'
     })
